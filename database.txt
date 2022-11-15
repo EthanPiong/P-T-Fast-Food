@@ -1,0 +1,9 @@
+create DATABASE PTFastFood;
+
+CREATE TABLE customer 
+(`cusName` varchar(50) NOT NULL primary key,
+`cusNickName` varchar(50) NOT NULL,
+`cusPass` varchar(20) NOT NULL,
+`cusEmail` varchar(50) NOT NULL,
+`cusPhone` varchar(11) NOT NULL);
+
