@@ -7,7 +7,7 @@
 
 
 
-<form action="upload.php" method="post" enctype="multipart/form-data">
+<form action="uploadProduct.php" method="post" enctype="multipart/form-data">
     
     <label>Product ID:</label>
     <input type="text" name="product_code"><br>
