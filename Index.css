@@ -10,7 +10,7 @@
 
 .html {
   font-size: 62.5%;
-  
+  scroll-behavior: smooth;
 }
 
 body {
@@ -35,18 +35,19 @@ body {
   margin-top: 1em;
   text-transform: uppercase;
   font-weight: small;
+  
 }
 
 .btn-primary {
-  color: #3D4A4D;
+  color: #f4f4f8;
   font-weight: 500;
-  background: #DAE6E6;
+  background: #fe4a49;
   transition: background 0.3s ;
 }
 
 .btn-primary:hover {
-  background: #00ACB4;
-  color: #DAE6E6;
+  background: #fed766;
+  color: white;
   transition: background 0.5s ease-in-out;
 }
 
@@ -58,14 +59,14 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+  box-shadow: inset 0 0 5px #ffdf7e; 
   border-radius: 10px;
-  background: #3D4A4D;
+  background: white;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #00ACB4; 
+  background: #ffd147; 
   border-radius: 20px;
 }
 
@@ -100,27 +101,27 @@ body {
   align-items: center;
 }
 
-.menu-items {
+#menu-items {
   display: flex;
   order: 2;
 }
 
-.menu-items li {
+#menu-items li {
   list-style: none;
   margin:10px 40px 15px 0;
   font-size:20px;
 }
 
-.menu-items a {
+#navbar-item {
   text-decoration: none;
-  color:#DAE6E6;
+  color:black;
   font-weight: 500;
   transition: color 0.4s ease-in-out;
   
 }
 
-.menu-items a:hover {
-  color:#00d8e4;
+#navbar-item:hover {
+  color:#fe4a49;
   transition: color 0.3s ease-in-out;
 }
 
@@ -132,23 +133,23 @@ body {
 }
 
 #P{
-  color: #5c7175;
+  color: #fe4a49;
 }
 #N{
-  color:#00ACB4;
+  color:#ffde7c;
 }
 #T{
-  color:#DAE6E6;
+  color:#2ab7ca;
 }
 
 /* ............//// Showcase styling ////......... */
 
-.showcase-area {
+#showcase-area {
   
-  height: 700px;
+  height: 100%;
   background: linear-gradient(
-      rgba(0, 0, 0, 0.815),
-      rgba(119, 119, 119, 0.473)
+      rgba(255, 255, 255, 0.815),
+      rgba(0, 0, 0, 0.133)
     ),
     url("../Img/shwcase-area\ background1.jpg");
   background-size:cover;
@@ -162,27 +163,27 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
-  font-size: 1.6rem;
-  color: #DAE6E6;
+  font-size: 1.9rem;
+  color: #4deaff;
 }
 
 .main-title {
   text-transform: uppercase;
   margin-top: 1.5em;
-  color: #00ACB4;
+  color: #ffd864;
 }
 
 /* ......//about us//...... */
 
 #about {
   padding: 50px 0;
-  background: #494949;
   height: 600px;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.63),
+    #f4f4f8e1,
     rgba(119, 119, 119, 0.158)
   ),url("../Img/about\ background.jpeg");
   background-size:cover;
+  background-repeat: no-repeat;
 }
 
 .about-wrapper {
@@ -191,18 +192,18 @@ body {
 }
 
 #about h2 {
-  color: #DAE6E6;
+  color: #fe4a49 ;
   font-size: 2.3rem;
 }
 
 #about p {
   font-size: 1.2rem;
-  color: #3D4A4D;
+  color:  black;
 }
 
 #about .small {
   font-size: 1.2rem;
-  color: #00ACB4;
+  color: #fed766;
   font-weight: 600;
 }
 
@@ -233,8 +234,8 @@ body {
 #food {
   padding: 5rem 0 10rem 0;
   background: linear-gradient(
-    rgba(0, 0, 0, 0.63),
-    rgba(119, 119, 119, 0.158)
+    rgba(255, 255, 255, 0.637),
+    rgba(184, 181, 181, 0)
   ),url("../Img/Food\ Category\ background\ \(2\).jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -246,7 +247,7 @@ body {
   font-weight: 500;
   margin-bottom: 40px;
   text-transform: uppercase;
-  color: #00ACB4;
+  color: #fe4a49;
 }
 
 .food-container {
@@ -320,10 +321,10 @@ body {
 
 #food-menu{
   background: linear-gradient(
-      rgba(0, 0, 0, 0.815),
-      rgba(119, 119, 119, 0.473)
+    #f4f4f83d,
+    rgba(119, 119, 119, 0.158)
     ),
-    url("../Img/Menu\ background.jpg");
+    url("../Img/Menu\ background.png");
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -333,7 +334,7 @@ body {
   font-size: 3.4rem;
   font-weight: 400;
   padding-top: 100px;
-  color: #00ACB4;
+  color: #fe4a49;
 }
 
 .food-menu-container {
@@ -364,23 +365,23 @@ body {
 
 .food-title {
   font-size: 1.8rem;
-  font-weight: 400;
-  color: #FEF8DD;
+  font-weight: 500;
+  color: #52ebff;
 }
 
 .food-description p {
   font-size: 1.2rem;
-  color: #d2fae7;
+  color: #ff5050;
   font-weight: 400;
 }
 
 .food-description .food-price {
-  color: #1fb698;
+  color: white;
   font-weight: 700;
   margin-top: 10px;
   padding: 10px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.151);
+  background-color:  #fed766;
   box-shadow: 0 5px 5px 0 rgba(24, 24, 24, 0.808);
 }
 
@@ -390,51 +391,50 @@ body {
 
 #contact {
   padding: 5rem 0;
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.74),
-      rgba(119, 119, 119, 0.219)
-    ),
-    url("../Img/cantact\ us\ background.jpg");
-  background-size:cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #ffe8a2;
 }
 
 .contact-container {
   display: flex;
-  background: #3D4A4D;
+  background: #f4f4f8  ;
   border-radius: 20px;
 }
 
-.contact-img {
-  width: 50%;
+
+
+.form-contact-detail {
+ color: #fe4a49;
+ font-size: 25px;
+ width: 50%;
 }
 
-.contact-img img {
+
+.form-contact-detail i{
+  padding:25px;
+  margin: 20px 20px 0 20px;
+  background-color: #fed766;
+  border-radius: 20px;
+  text-align: center;
   display: block;
-  height: 500px;
-  width: 100%;
-  object-position: center;
-  object-fit: cover;
-  border-radius: 20px 0 0 20px;
 }
 
+  
 .form-container {
   padding: 1rem;
   width: 50%;
   margin: auto;
 }
 
-.form-container input {
+.form-container input{
   display: block;
   width: 50%;
   border: none;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #fed766;
   padding: 1rem 0;
   box-shadow: none;
   outline: none;
   margin-bottom: 1rem;
-  color: #ddd;
+  color:  #fe4a49;
   font-weight: 500;
   background-color: transparent;
   transition: 0.5s;
@@ -444,8 +444,8 @@ body {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #ddd;
-  color: #ddd;
+  border-bottom: 2px solid #fed766;
+  color:  #fe4a49;
   outline: none;
   padding: 1rem 0;
   resize: none;
@@ -454,21 +454,21 @@ body {
 }
 
 .form-container input:focus::-webkit-input-placeholder,.form-container textarea:focus::-webkit-input-placeholder{
-  color:#ddd;
+  color:#fe4a49;
 }
 .form-container input:hover,.form-container textarea:hover{
-  border-bottom: 2px solid #00ACB4;
+  border-bottom: 2px solid #fe4a49
 }
 .form-container input:focus,.form-container textarea:focus{
-  border-bottom: 2px solid #00ACB4;
-  background-color:#536569 ;
+  border-bottom: 2px solid #fe4a49;
+  background-color:#e6e6ea ;
   border-radius: 5px 5px 0 0;
 }
 
 .form-container h2 {
   font-size: 2.7rem;
   font-weight: 500;
-  color: #00ACB4;
+  color: #fe4a49;
   margin-bottom: 1rem;
   margin-top: -1.2rem;
 }
@@ -482,8 +482,8 @@ body {
   font-size: 1.8rem;
   padding: 5px;
   font-weight: 300;
-  color: #fff;
-  background: rgb(65, 65, 65);
+  color: white;
+  background: #fed766;
 }
 
 /* ......../ media query /.......... */
