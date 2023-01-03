@@ -4,29 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>P&T Fast Food Website</title>
     <link rel="stylesheet" href="CSS/Index.css" type="text/css" />
-    
-
 </head>
 
 <body>
     <nav id="navbar">
         <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
             
             <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
             </div>
-            <ul class="menu-items">
-                <li><a href="#showcase">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#food">Category</a></li>
-                <li><a href="#food-menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="Login.php">Login</a></li>
+            <ul id="menu-items">
+                <li><a id="navbar-item" href="#showcase-area">Home</a></li>
+                <li><a id="navbar-item" href="#about">About</a></li>
+                <li><a id="navbar-item" href="#food">Category</a></li>
+                <li><a id="navbar-item" href="#food-menu">Menu</a></li>
+                <li><a id="navbar-item" href="#contact">Contact</a></li>
+                <li><a id="navbar-item" href="Login.php">Login</a></li>
             </ul>
             <h1 id="logo">
                 <span id="P">P</span>
@@ -35,7 +33,7 @@
             </h1>
         </div>
     </nav>
-    <section class="showcase-area" id="showcase">
+    <section class="section" id="showcase-area">
         <div class="showcase-container">
             <h1 class="main-title" id="home">Eat Burger</h1>
             <p>Quickly, it is good for taste.</p>
@@ -43,7 +41,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section class="section" id="about">
         <div class="about-wrapper container">
             <div class="about-text">
                 <p class="small">About Us</p>
@@ -61,7 +59,7 @@
         </div>
     </section>
 
-    <section id="food">
+    <section class="section" id="food">
         <h2>Types of food</h2>
         <div class="food-container container">
             <div class="food-type fruite">
@@ -96,7 +94,7 @@
             </div>
         </div>
     </section>
-    <section id="food-menu">
+    <section class="section" id="food-menu">
         <h2 class="food-menu-heading">Popular Burger</h2>
         <div class="food-menu-container container">
             <div class="food-menu-item">
@@ -175,11 +173,22 @@
             </div>
         </div>
     </section>  
-    <section id="contact">
+    <section class="section" id="contact">
         <div class="contact-container container">
-            <div class="contact-img">
-                <img src="https://i.postimg.cc/1XvYM67V/restraunt2.jpg" alt="" />
-            </div>
+            <table class="form-contact-detail">
+                <tr>
+                    <td><i class="fa fa-phone" style="font-size:40px"></i></td>
+                    <td><label>011-13054234</label></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-envelope-open" style="font-size:40px"></i></td>
+                    <td><label>P&TCareU@gmail.com</label></td>
+                </tr>
+                <tr>
+                    <td><i class="fa fa-map-marker" style="font-size:40px"></i></td>
+                    <td><label>Plaza Melaka Sentral, Lot No. 59, Zone D, Ground Floor, 75000, Malacca</label><td>
+                </tr>
+            </table>
 
             <div class="form-container">
                 <h2>Contact Us</h2>
@@ -200,14 +209,17 @@
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.top = "0";
-    document.getElementById("navbar").style.background = "black";
+    document.getElementById("navbar").style.background = "#fed766";
     document.getElementById("navbar").style.opacity = "1";
     document.getElementById("logo").style.fontSize = "40px"; 
+    document.getElementById("N").style.color = "white"; 
   } 
   else {
     document.getElementById("navbar").style.top = "20";
     document.getElementById("navbar").style.background = "transparent";
-    document.getElementById("logo").style.fontSize = "60px";  
+    document.getElementById("logo").style.fontSize = "60px"; 
+    document.getElementById("N").style.color = "#ffd147";
+
   }
 }
 
