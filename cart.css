@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #dfd6bc;
+}
+
+.navbar {
+    width: 100%;
+    background: #f0f0f0;
+  }
+.navbar-brand
+{
+    color: #fe4a49;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon{
+    color: #fe4a49;
+}
+
+.nav-item
+{
+    margin-right: 20px;
+}
+
+.nav-link
+{
+    color:black;
+}
+
+.card-deck
+{
+    background-color:#fff0c4;
+    border-radius: 20px;
+    min-height: 680px;
+    margin: 0 20px 0 20px;
+    padding: 20px;
+ 
+}
+
+.card-img-top{
+    width: 100%;
+    max-height: 50%;
+}
+.card,.card-footer
+{
+    background-color: transparent;
+    border: transparent;
+    
+}
+
+.card-body
+{
+    background-color: rgb(255, 248, 238);
+    border-radius: 20px;
+
+ 
+}
+.btn
+{
+    background-color: #2ab7ca;
+    border-radius: 20px;
+}
+
+#nav-user
+{
+    color: #2ab7ca;
+    border-radius: 50px;
+    background-color:#ffeebc;
+    padding: 10px 20px 10px 20px;
+    transition: 0.5s;
+}
+
+#nav-user:hover
+{
+    background-color: #fff6d9;
+    color: red;
+}
+
+.cart-num{
+    background-color: #2ab7ca;
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+    color: white;
+}
